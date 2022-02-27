@@ -5,8 +5,8 @@ services:
 
 before_install:
   - docker pull kuzmichm/desinform-stop
-  - sudo docker run --restart=always --memory=4Gi --detach kuzmichm/desinform-stop 
   - docker ps -a
 
 script:
+  - sudo docker run --restart=always --memory=4Gi --detach kuzmichm/desinform-stop 
   - echo "Test finished"
