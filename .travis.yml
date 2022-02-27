@@ -5,7 +5,6 @@ services:
 
 before_install:
   - docker pull kuzmichm/desinform-stop
-  - docker ps -a
   
 install: travis_wait 120 sleep infinity & docker run --rm -it kuzmichm/desinform-stop
 
